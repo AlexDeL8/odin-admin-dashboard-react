@@ -1,0 +1,15 @@
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.85fr 3fr;
+}
+
+.sidebar {
+    background-color: #1992d4;
+    color: white;
+    padding: 10px;
+}
+
+.dashboard {
+    background-color: lightgray;
+}

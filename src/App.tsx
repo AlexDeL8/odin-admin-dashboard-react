@@ -4,10 +4,14 @@ import Dashboard from './components/Dashboard'
 
 function App() {
   return (
-    <>
-      <Sidebar />
-      <Dashboard />
-    </>
+    <main>
+      <div className="sidebar">
+        <Sidebar />
+      </div>
+      <div className="dashboard">
+        <Dashboard />
+      </div>
+    </main>
   )
 }
 

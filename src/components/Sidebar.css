@@ -1,0 +1,16 @@
+.logoHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 1.75rem;
+}
+
+.sidebarGroup {
+
+}
+
+.sidebarItem {
+
+}
