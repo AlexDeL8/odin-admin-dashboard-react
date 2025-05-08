@@ -1,7 +1,7 @@
 main {
     height: 100vh;
     display: grid;
-    grid-template-columns: 0.85fr 3fr;
+    grid-template-columns: 0.65fr 3fr;
 }
 
 .sidebar {
@@ -12,4 +12,10 @@ main {
 
 .dashboard {
     background-color: lightgray;
+}
+
+@media(max-width: 549px) {
+    main {
+        grid-template-columns: 50px 1fr;
+    }
 }
