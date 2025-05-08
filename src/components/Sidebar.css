@@ -45,3 +45,24 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+@media(max-width: 549px) {
+    .logoHeading {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logoHeading > div {
+        display: none;
+    }
+
+    .sidebarItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebarItem > div {
+        display: none;
+    }
+}
