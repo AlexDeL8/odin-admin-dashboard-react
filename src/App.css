@@ -1,3 +1,7 @@
+:root {
+    --backgroundColor: #E2E8F0;
+}
+
 main {
     height: 100vh;
     display: grid;
@@ -11,7 +15,7 @@ main {
 }
 
 .dashboard {
-    background-color: lightgray;
+    background-color: var(--backgroundColor);
 }
 
 @media(max-width: 549px) {
