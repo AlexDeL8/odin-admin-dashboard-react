@@ -1,5 +1,15 @@
 /* Common */
-.profilePicContainer {
+.pictureSizeSm {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.pictureSizeMd {
+    height: 4em;
+    width: 4em;
+}
+
+.pictureSizeLg {
     height: 2.5em;
     width: 2.5em;
 }
@@ -20,9 +30,12 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-/* Navbar */
-.navbarContainer {
+.dashboardBarContainer {
     padding: 10px 25px;
+}
+
+/* Navbar */
+#navbarContainer {
     display: grid;
     grid-template-columns: 3fr 1.5fr;
     align-items: center;
@@ -38,9 +51,10 @@
 #navbarSearchContainer > input {
     flex-grow: 1;
     border: none;
-    border-radius: 11px;
+    border-radius: 15px;
     background-color: var(--backgroundColor);
-    padding: 5px;
+    padding: 7px 10px;
+    font-size: 1rem;
 }
 
 #navbarSearchContainer > input:focus {
@@ -62,17 +76,13 @@
 }
 
 @media(max-width: 549px) {
-    #navbarProfileContainer {
-        column-gap: 0.75em;
+    #navbarProfileContainer > #notificationIcon {
+        display: none;
     }
 }
 
 @media(max-width: 349px) {
-    #navbarSearchContainer > .searchIcon {
-        display: none;
-    }
-
-    #navbarProfileContainer > .notificationIcon {
+    #navbarSearchContainer > #searchIcon {
         display: none;
     }
 }

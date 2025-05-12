@@ -18,6 +18,12 @@ main {
     background-color: var(--backgroundColor);
 }
 
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media(max-width: 549px) {
     main {
         grid-template-columns: 50px 1fr;
