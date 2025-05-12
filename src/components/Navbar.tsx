@@ -15,11 +15,11 @@ const Navbar = (props: NavbarProps) => {
   return (
     <>
         <div id='navbarSearchContainer'>
-            <Icon path={mdiMagnify} size={1} />
+            <div className='searchIcon'><Icon path={mdiMagnify} size={1} /></div>
             <input type='text' placeholder='Search projects...' />
         </div>
         <div id='navbarProfileContainer'>
-            <Icon path={mdiBellRingOutline} size={1} />
+            <div className='notificationIcon'><Icon path={mdiBellRingOutline} size={1} /></div>
             <ProfilePic size={1} image={props.loggedInUser.profilePic ?? defaultProfilePic} />
             <div className='usernameText'>{props.loggedInUser.name}</div>
         </div>

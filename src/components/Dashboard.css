@@ -66,3 +66,13 @@
         column-gap: 0.75em;
     }
 }
+
+@media(max-width: 349px) {
+    #navbarSearchContainer > .searchIcon {
+        display: none;
+    }
+
+    #navbarProfileContainer > .notificationIcon {
+        display: none;
+    }
+}
