@@ -1,15 +1,21 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+import Navbar from './Navbar'
+import { loggedInUser } from '../users'
+import './Dashboard.css'
 
-enum DashboardType {
+export enum DashboardType {
     Admin = "Admin",
     User = "User"
 }
 
 const Dashboard = () => {
-    const [dashboardType, setDashboardType] = useState(DashboardType.Admin)
+    // const [dashboardType, setDashboardType] = useState(DashboardType.Admin)
     return (
-        <h1>{dashboardType}</h1>
-        // <Navbar setType={setDashboardType} />
+        <div className='dashboardBar'>
+            <div className='navbarContainer'>
+            <Navbar /* setType={setDashboardType} */ loggedInUser={loggedInUser} /> 
+            </div>
+        </div>
         // <Taskbar />
         // <DashboardContent type={dashboardType} />
     )
