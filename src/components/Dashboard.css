@@ -1,32 +1,6 @@
-/* Common */
-.pictureSizeSm {
-    height: 2.5em;
-    width: 2.5em;
-}
-
-.pictureSizeMd {
-    height: 4em;
-    width: 4em;
-}
-
-.pictureSizeLg {
-    height: 5.5em;
-    width: 5.5em;
-}
-
-.profilePicImg {
-    max-width: 100%;
-    max-width: 100%;
-    border-radius: 50%;
-}
-
-#navbarUserNameText {
-    text-wrap: nowrap;
-}
-
 /* Dashboard */
 .dashboardBar {
-    background-color: white;
+    background-color: var(--cardColor);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -40,6 +14,7 @@
     grid-template-columns: 3fr 1.5fr;
     align-items: center;
     column-gap: 1.5em;
+    color: var(--cardTextColor);
 }
 
 #navbarSearchContainer {
@@ -52,7 +27,7 @@
     flex-grow: 1;
     border: none;
     border-radius: 15px;
-    background-color: var(--backgroundColor);
+    background-color: var(--secondaryColor);
     padding: 7px 10px;
     font-size: 1rem;
 }
@@ -70,6 +45,7 @@
 }
 
 #navbarUserNameText {
+    text-wrap: nowrap;
     font-weight: bold;
 }
 
@@ -77,10 +53,7 @@
 #taskbarContainer {
     display: grid;
     grid-template-columns: 3fr 1.5fr;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; */
+    color: var(--cardTextColor);
 }
 
 #taskbarGreetingContainer {

@@ -1,0 +1,23 @@
+/* Profile Pic */
+.pictureSizeSm {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.pictureSizeMd {
+    height: 4em;
+    width: 4em;
+}
+
+.pictureSizeLg {
+    height: 5.5em;
+    width: 5.5em;
+}
+
+.profilePicImg {
+    max-width: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* Button */

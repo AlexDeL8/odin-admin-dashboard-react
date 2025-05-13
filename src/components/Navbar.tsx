@@ -3,7 +3,7 @@ import { mdiMagnify, mdiBellRingOutline } from '@mdi/js';
 import type { User } from '../users';
 import defaultProfilePic from '../assets/avatar_default_02_A5A4A4.png'
 
-import ProfilePic from './ProfilePic';
+import ProfilePic from './generic/ProfilePic';
 import './Dashboard.css'
 
 type NavbarProps = {

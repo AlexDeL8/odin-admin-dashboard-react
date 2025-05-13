@@ -1,4 +1,4 @@
-import './Dashboard.css'
+import './Generic.css'
 
 type ProfilePicProps = {
     size: number;

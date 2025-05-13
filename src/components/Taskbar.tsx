@@ -1,14 +1,39 @@
 import type { User } from '../users'
 import './Dashboard.css'
 
-import ProfilePic from './ProfilePic'
+import ProfilePic from './generic/ProfilePic'
 import defaultProfilePic from '../assets/avatar_default_02_A5A4A4.png'
+import Button from './generic/Button'
 
 type TaskbarProps = {
     loggedInUser: User
 }
 
 const Taskbar = (props: TaskbarProps) => {
+    const taskbarButtons = [
+        {
+            isPrimary: true,
+            action: () => {
+                console.log("New Clicked")
+            },
+            text: "New"
+        },
+        {
+            isPrimary: true,
+            action: () => {
+                console.log("Upload Clicked")
+            },
+            text: "Upload"
+        },
+        {
+            isPrimary: true,
+            action: () => {
+                console.log("Share Clicked")
+            },
+            text: "Share"
+        }
+    ]
+
     return (
         <>
             <div id='taskbarGreetingContainer'>
@@ -22,11 +47,12 @@ const Taskbar = (props: TaskbarProps) => {
                 </div>
             </div>
             <div id='taskbarActionsContainer'>
-                <div>hello</div>
-                <div>hello</div>
-                <div>hello</div>
-                <div>hello</div>
-                {/* <ActionButtons buttonsList={} /> */}
+                {taskbarButtons.map((button) => {
+                    return <Button 
+                            isPrimary={button.isPrimary} 
+                            action={button.action}
+                            btnText={button.text} />
+                })}
             </div>
         </>
     )
