@@ -21,7 +21,7 @@ const Navbar = (props: NavbarProps) => {
         <div id='navbarProfileContainer'>
             <div className='iconContainer' id='notificationIcon'><Icon path={mdiBellRingOutline} size={1} /></div>
             <ProfilePic size={1} image={props.loggedInUser.profilePic ?? defaultProfilePic} />
-            <div className='usernameText'>{props.loggedInUser.name}</div>
+            <div id='navbarUserNameText'>{props.loggedInUser.name}</div>
         </div>
     </>
   )

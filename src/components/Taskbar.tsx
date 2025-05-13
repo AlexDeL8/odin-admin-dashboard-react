@@ -11,8 +11,23 @@ type TaskbarProps = {
 const Taskbar = (props: TaskbarProps) => {
     return (
         <>
-            <ProfilePic size={2} image={props.loggedInUser.profilePic ?? defaultProfilePic} />
-            <div>{props.loggedInUser.name}</div>
+            <div id='taskbarGreetingContainer'>
+                <ProfilePic size={2} image={props.loggedInUser.profilePic ?? defaultProfilePic} />
+                <div id='taskbarGreetingText'>
+                    <div id='greetingText'>Hi there,</div>
+                    <div id='greetingUserInfo'>
+                        <div id='greetingUserName'>{props.loggedInUser.name}</div>
+                        <div id='greetingUserHandle'>{"(@"+(props.loggedInUser.handle)+")"}</div>
+                    </div>
+                </div>
+            </div>
+            <div id='taskbarActionsContainer'>
+                <div>hello</div>
+                <div>hello</div>
+                <div>hello</div>
+                <div>hello</div>
+                {/* <ActionButtons buttonsList={} /> */}
+            </div>
         </>
     )
 }

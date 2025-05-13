@@ -10,8 +10,8 @@
 }
 
 .pictureSizeLg {
-    height: 2.5em;
-    width: 2.5em;
+    height: 5.5em;
+    width: 5.5em;
 }
 
 .profilePicImg {
@@ -20,7 +20,7 @@
     border-radius: 50%;
 }
 
-.usernameText {
+#navbarUserNameText {
     text-wrap: nowrap;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .dashboardBarContainer {
-    padding: 10px 25px;
+    padding: 15px 25px;
 }
 
 /* Navbar */
@@ -69,8 +69,56 @@
     column-gap: 2em;
 }
 
+#navbarUserNameText {
+    font-weight: bold;
+}
+
+/* Taskbar */
+#taskbarContainer {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+#taskbarGreetingContainer {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+    font-weight: bold;
+}
+
+#taskbarGreetingText {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 7px;
+}
+
+#greetingText {
+    font-size: 0.75rem;
+}
+
+#greetingUserInfo {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    font-size: 1.25rem;
+}
+
+#taskbarActionsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 @media(max-width: 799px) {
-    .usernameText {
+    #navbarUserNameText {
         display: none;
     }
 }
