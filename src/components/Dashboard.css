@@ -5,7 +5,7 @@
 }
 
 .dashboardBarContainer {
-    padding: 15px 25px;
+    padding: 13px 25px;
 }
 
 /* Navbar */
@@ -88,10 +88,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    column-gap: 20px;
 }
 
 @media(max-width: 799px) {
     #navbarUserNameText {
+        display: none;
+    }
+
+    #greetingUserHandle {
         display: none;
     }
 }

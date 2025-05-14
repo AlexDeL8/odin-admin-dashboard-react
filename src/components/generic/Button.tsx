@@ -1,3 +1,5 @@
+import './Generic.css'
+
 type ButtonProps = {
     isPrimary: boolean;
     action: (e: unknown) => void;

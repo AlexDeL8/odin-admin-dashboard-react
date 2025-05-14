@@ -21,3 +21,46 @@
 }
 
 /* Button */
+button {
+    border-radius: 20px;
+    border: 2px solid;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 85px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.primaryBtn {
+    background-color: var(--primaryColor);
+    color: var(--primaryTextColor);
+    border-color: var(--primaryColor);
+}
+
+.primaryBtn:hover {
+    background-color: var(--primaryBtnHoverColor);
+}
+
+.primaryBtn:active {
+    background-color: var(--cardColor);
+    color: var(--primaryColor);
+}
+
+.secondaryBtn {
+    background-color: var(--cardColor);
+    color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+.secondaryBtn:hover {
+    background-color: var(--secondaryBtnHoverColor);
+}
+
+.secondaryBtn:active {
+    background-color: var(--primaryColor);
+    color: var(--cardColor);
+}

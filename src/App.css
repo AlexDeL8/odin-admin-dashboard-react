@@ -5,6 +5,8 @@
     --cardColor: #FFFFFF;
     --cardTextColor: #000000;
     --cardSecondaryTextColor: #E2E8F0;
+    --primaryBtnHoverColor: #55a1ca;
+    --secondaryBtnHoverColor: #e0e0e0;
 }
 
 main {
