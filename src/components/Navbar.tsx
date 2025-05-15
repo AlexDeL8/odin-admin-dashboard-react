@@ -4,7 +4,7 @@ import type { User } from '../users';
 import defaultProfilePic from '../assets/avatar_default_02_A5A4A4.png'
 
 import ProfilePic from './generic/ProfilePic';
-import './Dashboard.css'
+import './Navbar.css'
 
 type NavbarProps = {
     // setType: string;

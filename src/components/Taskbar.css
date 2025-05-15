@@ -1,0 +1,73 @@
+#taskbarContainer {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    column-gap: 15px;
+    color: var(--cardTextColor);
+}
+
+#taskbarGreetingContainer {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+    font-weight: bold;
+}
+
+#taskbarGreetingText {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+#greetingText {
+    font-size: 0.75rem;
+}
+
+#taskbarActionsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+@media(max-width: 849px) {
+    #greetingText {
+        font-size: 0.66rem;
+    }
+
+    #greetingUserInfo {
+        font-size: 0.85rem;
+    }
+}
+
+@media(max-width: 799px) {
+    #taskbarGreetingText {
+        align-items: center;
+        text-align: center;
+    }
+
+    #taskbarGreetingContainer > .profilePicContainer {
+        display: none;
+    }
+
+    #taskbarActionsContainer {
+        column-gap: 10px;
+    }
+}
+
+@media(max-width: 579px) {
+    #taskbarGreetingText {
+        display: none;
+    }
+
+    #taskbarContainer {
+        grid-template-columns: 1fr;
+    }
+
+    #taskbarActionsContainer {
+        column-gap: 15px;
+    }
+}

@@ -1,0 +1,81 @@
+#navbarContainer {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    align-items: center;
+    column-gap: 1.5em;
+    color: var(--cardTextColor);
+}
+
+#navbarSearchContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+}
+
+#navbarSearchContainer > input {
+    flex-grow: 1;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--secondaryColor);
+    padding: 7px 10px;
+    font-size: 1rem;
+}
+
+#navbarSearchContainer > input:focus {
+    outline: none;
+}
+
+#navbarProfileContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2em;
+}
+
+#navbarUserNameText {
+    text-wrap: nowrap;
+    font-weight: bold;
+}
+
+@media(max-width: 849px) {
+    #navbarSearchContainer > input {
+        padding: 5px 8px;
+        font-size: 0.8rem;
+    }
+
+    #navbarProfileContainer {
+        column-gap: 1.75em;
+    }
+
+    #navbarUserNameText {
+        font-size: 0.75rem;
+    }
+}
+
+@media(max-width: 799px) {
+    #navbarContainer {
+        grid-template-columns: 3fr 1fr;
+        column-gap: 1em;
+    }
+
+    #navbarUserNameText {
+        display: none;
+    }
+}
+
+@media(max-width: 549px) {
+    #navbarContainer {
+        column-gap: 0;
+    }
+
+    #navbarProfileContainer > #notificationIcon {
+        display: none;
+    }
+}
+
+@media(max-width: 379px) {
+    #navbarSearchContainer > #searchIcon {
+        display: none;
+    }
+}
