@@ -10,7 +10,7 @@ const Button = (props: ButtonProps) => {
   return (
     <button 
     className={props.isPrimary ? 'primaryBtn' : 'secondaryBtn'} 
-    onClick={() => props.action}>
+    onClick={props.action}>
         {props.btnText}
     </button>
   )

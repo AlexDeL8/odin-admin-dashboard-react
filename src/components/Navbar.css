@@ -30,7 +30,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 2em;
+    column-gap: 1.5em;
 }
 
 #navbarUserNameText {
@@ -66,7 +66,7 @@
 
 @media(max-width: 549px) {
     #navbarContainer {
-        column-gap: 0;
+        column-gap: 1em;
     }
 
     #navbarProfileContainer > #notificationIcon {

@@ -64,3 +64,17 @@ button:hover {
     background-color: var(--primaryColor);
     color: var(--cardColor);
 }
+
+@media(max-width: 399px) {
+    button {
+        font-size: 0.66rem;
+        width: 4.5rem;
+    }
+}
+
+@media(max-width: 349px) {
+    button {
+        font-size: 0.6rem;
+        width: 3.75rem;
+    }
+}

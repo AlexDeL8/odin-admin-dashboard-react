@@ -70,5 +70,4 @@
     #taskbarActionsContainer {
         column-gap: 15px;
     }
-    /* TODO: Need to update gaps, padding, etc to rem */
 }
