@@ -1,7 +1,9 @@
 // import { useState } from 'react'
-import Navbar from './Navbar'
 import { loggedInUser } from '../users'
 import './Dashboard.css'
+
+import Navbar from './Navbar'
+import Taskbar from './Taskbar'
 
 export enum DashboardType {
     Admin = "Admin",
@@ -12,11 +14,13 @@ const Dashboard = () => {
     // const [dashboardType, setDashboardType] = useState(DashboardType.Admin)
     return (
         <div className='dashboardBar'>
-            <div className='navbarContainer'>
-            <Navbar /* setType={setDashboardType} */ loggedInUser={loggedInUser} /> 
+            <div className='dashboardBarContainer' id='navbarContainer'>
+                <Navbar /* setType={setDashboardType} */ loggedInUser={loggedInUser} /> 
+            </div>
+            <div className='dashboardBarContainer' id='taskbarContainer'>
+                <Taskbar loggedInUser={loggedInUser} />
             </div>
         </div>
-        // <Taskbar />
         // <DashboardContent type={dashboardType} />
     )
 }

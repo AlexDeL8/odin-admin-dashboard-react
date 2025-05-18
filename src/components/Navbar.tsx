@@ -3,8 +3,8 @@ import { mdiMagnify, mdiBellRingOutline } from '@mdi/js';
 import type { User } from '../users';
 import defaultProfilePic from '../assets/avatar_default_02_A5A4A4.png'
 
-import ProfilePic from './ProfilePic';
-import './Dashboard.css'
+import ProfilePic from './generic/ProfilePic';
+import './Navbar.css'
 
 type NavbarProps = {
     // setType: string;
@@ -15,13 +15,13 @@ const Navbar = (props: NavbarProps) => {
   return (
     <>
         <div id='navbarSearchContainer'>
-            <div className='searchIcon'><Icon path={mdiMagnify} size={1} /></div>
+            <div className='iconContainer' id='searchIcon'><Icon path={mdiMagnify} size={1} /></div>
             <input type='text' placeholder='Search projects...' />
         </div>
         <div id='navbarProfileContainer'>
-            <div className='notificationIcon'><Icon path={mdiBellRingOutline} size={1} /></div>
+            <div className='iconContainer' id='notificationIcon'><Icon path={mdiBellRingOutline} size={1} /></div>
             <ProfilePic size={1} image={props.loggedInUser.profilePic ?? defaultProfilePic} />
-            <div className='usernameText'>{props.loggedInUser.name}</div>
+            <div id='navbarUserNameText'>{props.loggedInUser.name}</div>
         </div>
     </>
   )

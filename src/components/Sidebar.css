@@ -25,7 +25,7 @@
 }
 
 .sidebarList:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .sidebarItem {
@@ -46,7 +46,7 @@
     text-decoration: underline;
 }
 
-@media(max-width: 549px) {
+@media(max-width: 699px) {
     .logoHeading {
         display: flex;
         justify-content: center;

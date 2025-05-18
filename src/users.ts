@@ -20,8 +20,8 @@ const userList: User[] = [
         type: "User"
     },
     {
-        name: "Morgan Oakley",
-        handle: "morgan",
+        name: "Morgan Oakleyfdsafdsfd",
+        handle: "morgan_dkk113",
         profilePic: greenProfilePic,
         title: "Super Cool Project",
         type: "Admin"

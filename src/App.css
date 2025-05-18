@@ -1,5 +1,12 @@
 :root {
-    --backgroundColor: #E2E8F0;
+    --primaryColor: #1992D4;
+    --primaryTextColor: #FFFFFF;
+    --secondaryColor: #E2E8F0;
+    --cardColor: #FFFFFF;
+    --cardTextColor: #000000;
+    --cardSecondaryTextColor: #E2E8F0;
+    --primaryBtnHoverColor: #55a1ca;
+    --secondaryBtnHoverColor: #e0e0e0;
 }
 
 main {
@@ -9,16 +16,22 @@ main {
 }
 
 .sidebar {
-    background-color: #1992d4;
-    color: white;
-    padding: 10px;
+    background-color: var(--primaryColor);
+    color: var(--primaryTextColor);
+    padding: 0.65rem;
 }
 
 .dashboard {
-    background-color: var(--backgroundColor);
+    background-color: var(--secondaryColor);
 }
 
-@media(max-width: 549px) {
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 699px) {
     main {
         grid-template-columns: 50px 1fr;
     }

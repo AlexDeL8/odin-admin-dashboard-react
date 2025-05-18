@@ -1,0 +1,80 @@
+/* Profile Pic */
+.pictureSizeSm {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.pictureSizeMd {
+    height: 4em;
+    width: 4em;
+}
+
+.pictureSizeLg {
+    height: 5.5em;
+    width: 5.5em;
+}
+
+.profilePicImg {
+    max-width: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* Button */
+button {
+    border-radius: 20px;
+    border: 2px solid;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: 5.25rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.primaryBtn {
+    background-color: var(--primaryColor);
+    color: var(--primaryTextColor);
+    border-color: var(--primaryColor);
+}
+
+.primaryBtn:hover {
+    background-color: var(--primaryBtnHoverColor);
+}
+
+.primaryBtn:active {
+    background-color: var(--cardColor);
+    color: var(--primaryColor);
+}
+
+.secondaryBtn {
+    background-color: var(--cardColor);
+    color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+.secondaryBtn:hover {
+    background-color: var(--secondaryBtnHoverColor);
+}
+
+.secondaryBtn:active {
+    background-color: var(--primaryColor);
+    color: var(--cardColor);
+}
+
+@media(max-width: 399px) {
+    button {
+        font-size: 0.66rem;
+        width: 4.5rem;
+    }
+}
+
+@media(max-width: 349px) {
+    button {
+        font-size: 0.6rem;
+        width: 3.75rem;
+    }
+}
