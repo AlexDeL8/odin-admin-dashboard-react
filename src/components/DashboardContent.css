@@ -1,0 +1,36 @@
+.contentTitle {
+    font-size: 1.1rem;
+}
+
+.dashboardCard {
+    height: 3rem;
+    width: 4rem;
+    --_priority: var(--priority, gray);
+    background-color: var(--cardColor);
+    border-radius: 10px;
+    border-left: 5px solid var(--_priority);
+}
+
+.cardTitle {
+    color: var(--cardTextColor);
+}
+
+.cardDescription {
+    color: var(--cardSecondaryTextColor);
+}
+
+.dashboardCard > .hiPriority {
+    --priority: var(--mdPriorityColor);
+}
+
+.dashboardCard > .mdPriority {
+    --priority: var(--mdPriorityColor);
+}
+
+.dashboardCard > .lwPriority {
+    --priority: var(--mdPriorityColor);
+}
+
+@media(max-width: 579px) {
+
+}
