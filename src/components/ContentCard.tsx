@@ -1,9 +1,9 @@
 import type { Annoucement } from "../announcements"
 import type { Project } from "../projects"
-import type { User } from "../users"
+import type { TrendingUser } from "./ContentSection"
 
 type ContentCardProps = {
-  data: Project | Annoucement | User
+  data: Project | Annoucement | TrendingUser
 }
 
 const ContentCard = (props: ContentCardProps) => {

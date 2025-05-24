@@ -3,9 +3,10 @@ import type { Project } from "../projects";
 import type { User } from "../users";
 import ContentCard from "./ContentCard";
 
+export type TrendingUser = Pick<Partial<User>, 'profilePic' | 'handle' | 'title'>
 type ContentSectionProps = {
   title?: string;
-  cardData?: Project[] | Annoucement[] | User[];
+  cardData?: Project[] | Annoucement[] | TrendingUser[];
 }
 
 const ContentSection = (props: ContentSectionProps) => {
