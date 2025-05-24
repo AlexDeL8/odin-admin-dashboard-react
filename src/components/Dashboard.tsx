@@ -4,6 +4,7 @@ import './Dashboard.css'
 
 import Navbar from './Navbar'
 import Taskbar from './Taskbar'
+import DashboardContent from './DashboardContent'
 
 export enum DashboardType {
     Admin = "Admin",
@@ -13,15 +14,19 @@ export enum DashboardType {
 const Dashboard = () => {
     // const [dashboardType, setDashboardType] = useState(DashboardType.Admin)
     return (
-        <div className='dashboardBar'>
-            <div className='dashboardBarContainer' id='navbarContainer'>
-                <Navbar /* setType={setDashboardType} */ loggedInUser={loggedInUser} /> 
+        <>
+            <div className='dashboardBar'>
+                <div className='dashboardBarContainer' id='navbarContainer'>
+                    <Navbar /* setType={setDashboardType} */ loggedInUser={loggedInUser} /> 
+                </div>
+                <div className='dashboardBarContainer' id='taskbarContainer'>
+                    <Taskbar loggedInUser={loggedInUser} />
+                </div>
             </div>
-            <div className='dashboardBarContainer' id='taskbarContainer'>
-                <Taskbar loggedInUser={loggedInUser} />
+            <div className='dashboardContentContainer'>
+                <DashboardContent /* type={dashboardType} */ />
             </div>
-        </div>
-        // <DashboardContent type={dashboardType} />
+        </>
     )
 }
 

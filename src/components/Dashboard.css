@@ -7,8 +7,21 @@
     padding: 0.8rem 1.5rem;
 }
 
+.dashboardContentContainer {
+    --lwPriorityColor: #3a9b3e;
+    --mdPriorityColor: #f0b429;
+    --hiPriorityColor: #e44242;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 1.75rem 1rem;
+}
+
 @media(max-width: 579px) {
     .dashboardBarContainer {
         padding: 0.5rem 1.5rem;
+    }
+
+    .dashboardContentContainer {
+        
     }
 }
