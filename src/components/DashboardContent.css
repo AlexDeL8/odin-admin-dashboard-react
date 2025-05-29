@@ -1,34 +1,80 @@
-.contentTitle {
-    font-size: 1.1rem;
+/* Content Containers */
+.contentContainer.mainContentContainer > .sectionCardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(325px, 1fr));
+    column-gap: var(--dashboardGapSize);
+    row-gap: var(--dashboardGapSize);
 }
 
-.dashboardCard {
-    height: 3rem;
-    width: 4rem;
-    --_priority: var(--priority, gray);
+.contentContainer.secondaryContentContainer > .sectionCardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: var(--dashboardGapSize);
+    row-gap: var(--dashboardGapSize);
+}
+
+/* Content Section */
+.sectionTitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Content Card */
+.contentCard {
+    box-sizing: border-box;
+    height: 13rem;
     background-color: var(--cardColor);
-    border-radius: 10px;
+    border-radius: 6px;
+    --_priority: var(--priority, gray);
     border-left: 5px solid var(--_priority);
+    padding: 1.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardTextContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
 }
 
 .cardTitle {
     color: var(--cardTextColor);
+    font-weight: bold;
 }
 
 .cardDescription {
     color: var(--cardSecondaryTextColor);
+    font-weight: lighter;
 }
 
-.dashboardCard > .hiPriority {
+.cardIconContainer {
+    color: var(--cardTextColor);
+}
+
+.contentCard.lowPriority {
+    --priority: var(--lwPriorityColor);
+}
+
+.contentCard.mediumPriority {
     --priority: var(--mdPriorityColor);
 }
 
-.dashboardCard > .mdPriority {
-    --priority: var(--mdPriorityColor);
+.contentCard.highPriority {
+    --priority: var(--hiPriorityColor);
 }
 
-.dashboardCard > .lwPriority {
-    --priority: var(--mdPriorityColor);
+.cardIconContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+.cardIconContainer > *:hover {
+    cursor: pointer;
 }
 
 @media(max-width: 579px) {

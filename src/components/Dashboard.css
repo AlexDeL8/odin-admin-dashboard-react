@@ -11,9 +11,11 @@
     --lwPriorityColor: #3a9b3e;
     --mdPriorityColor: #f0b429;
     --hiPriorityColor: #e44242;
+    --dashboardGapSize: 1.5rem;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    padding: 1.75rem 1rem;
+    grid-template-columns: 3.5fr 1fr;
+    padding: 1.75rem 2rem 1.75rem 1rem;
+    column-gap: var(--dashboardGapSize);
 }
 
 @media(max-width: 579px) {

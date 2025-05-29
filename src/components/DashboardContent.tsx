@@ -26,13 +26,13 @@ const DashboardContent = () => {
 
   return (
     <>
-        <div className='contentContainer'>
-            <ContentSection title="Projects" cardData={projects} />
+        <div className='contentContainer mainContentContainer'>
+            <ContentSection title="Your Projects" cardData={{type: "single", data: projects}} />
         </div>
 
-        <div className='contentContainer'>
-            <ContentSection title="Annoucements" cardData={annoucements} />
-            <ContentSection title="Trending" cardData={users} />
+        <div className='contentContainer secondaryContentContainer'>
+            <ContentSection title="Annoucements" cardData={{type: "arrayDiv", data: annoucements}} />
+            <ContentSection title="Trending" cardData={{type: "array", data: users}} />
         </div>
     </>
   )
