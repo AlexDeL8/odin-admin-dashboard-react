@@ -1,7 +1,7 @@
 import './Generic.css'
 
 type ProfilePicProps = {
-    size: number;
+    size?: number;
     image: string;
 }
 

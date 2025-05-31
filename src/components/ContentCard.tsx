@@ -2,6 +2,8 @@ import Icon from '@mdi/react';
 import { mdiStarPlusOutline } from '@mdi/js';
 import { mdiEyePlusOutline } from '@mdi/js';
 import { mdiShareVariantOutline } from '@mdi/js';
+import ProfilePic from './generic/ProfilePic';
+import defaultProfilePic from '../assets/avatar_default_02_A5A4A4.png'
 
 import type { Annoucement } from "../announcements"
 import type { Project } from "../projects"
@@ -29,9 +31,9 @@ const ContentCard = (props: ContentCardProps) => {
         if(isTrendingUserArray(data)) {
           return (
             <>
-              <div className='trendingUserPhoto'>{data.profilePic}</div>
+              <ProfilePic image={data.profilePic ?? defaultProfilePic} />
               <div className='trendingUserInfo'>
-                <div className='cardTitle'>`@{data.handle}`</div>
+                <div className='cardTitle'>@{data.handle}</div>
                 <div className='cardDescription'>{data.title}</div>
               </div>
             </>
