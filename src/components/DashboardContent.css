@@ -163,6 +163,12 @@
     font-weight: normal;
 }
 
-@media(max-width: 579px) {
-
+@media(max-width: 879px) {
+    .contentContainer.mainContentContainer > .sectionCardContainer {
+        grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    }
+    
+    .contentContainer.secondaryContentContainer > .sectionCardContainer {
+        grid-template-columns: minmax(250px, 1fr);
+    }
 }
