@@ -38,13 +38,13 @@ const ContentSection = (props: ContentSectionProps) => {
         break;
     case "array":
       sectionContent = 
-        <div className='contentCard'>
+        <div className='contentCard trendingUsersContentCard'>
           <ContentCard data={props.cardData.data} />
         </div>
         break;
     case "arrayDiv":
       sectionContent =
-        <div className='contentCard'>
+        <div className='contentCard annoucementContentCard'>
           <ContentCard data={props.cardData.data} divider={true} />
         </div>
       break;

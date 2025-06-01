@@ -6,7 +6,7 @@ export type Annoucement = {
 const annoucementList: Annoucement[] = [
     {
         title: "Site Maintenance",
-        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus."
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit."
     },
     {
         title: "Community Share Day",

@@ -30,24 +30,25 @@ const ContentCard = (props: ContentCardProps) => {
       {props.data.map((data) => {
         if(isTrendingUserArray(data)) {
           return (
-            <>
+            <div className='trendingUserContainer'>
               <ProfilePic image={data.profilePic ?? defaultProfilePic} />
               <div className='trendingUserInfo'>
                 <div className='cardTitle'>@{data.handle}</div>
                 <div className='cardDescription'>{data.title}</div>
               </div>
-            </>
+              {props.divider ? <hr /> : null}
+            </div>
           )
         } else if(isAnnoucement(data)) {
           return (
-            <>
+            <div className='annoucementContainer'>
               <div className='cardTitle'>{data.title}</div>
               <div className='cardDescription'>{data.description}</div>
-            </>
+              {props.divider ? <hr /> : null}
+            </div>
           )
         }
       })}
-      {props.divider ? <hr /> : null}
     </>
   } else {
     card = 

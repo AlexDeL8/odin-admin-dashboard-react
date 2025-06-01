@@ -45,6 +45,8 @@
 .contentContainer.secondaryContentContainer .contentCard {
     display: flex;
     flex-direction: column;
+    border: none;
+    padding: 1.75rem
 }
 
 .cardTextContainer {
@@ -68,6 +70,8 @@
     text-overflow: ellipsis;
     white-space: normal;
 }
+
+/* Main Content Cards */
 
 .contentContainer.mainContentContainer .cardTitle {
     font-size: 1rem;
@@ -113,6 +117,50 @@
 
 .cardIconContainer > *:hover {
     cursor: pointer;
+}
+
+/* Secondary Content Cards */
+.contentContainer.secondaryContentContainer .annoucementContentCard {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.contentContainer.secondaryContentContainer .annoucementContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.1rem;
+}
+
+.annoucementContainer > hr {
+    width: 100%;
+}
+
+.contentContainer.secondaryContentContainer .annoucementContentCard > .annoucementContainer:last-child > hr {
+    display: none;    
+}
+
+.contentContainer.secondaryContentContainer .trendingUsersContentCard {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.contentContainer.secondaryContentContainer .trendingUserContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.trendingUserInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+}
+
+.trendingUserInfo > .cardTitle {
+    font-weight: normal;
 }
 
 @media(max-width: 579px) {
