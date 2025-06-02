@@ -18,12 +18,15 @@
     column-gap: var(--dashboardGapSize);
 }
 
+@media(max-width: 879px) {
+    .dashboardContentContainer {
+        --dashboardGapSize: 1.25rem;
+        padding-right: 1rem;
+    }
+}
+
 @media(max-width: 579px) {
     .dashboardBarContainer {
         padding: 0.5rem 1.5rem;
-    }
-
-    .dashboardContentContainer {
-        
     }
 }

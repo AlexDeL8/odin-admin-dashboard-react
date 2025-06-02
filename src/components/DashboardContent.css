@@ -1,7 +1,7 @@
 /* Content Containers */
 .contentContainer.mainContentContainer > .sectionCardContainer {
     display: grid;
-    grid-template-columns: repeat(2, minmax(325px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
     grid-auto-rows: 200px;
     column-gap: var(--dashboardGapSize);
     row-gap: var(--dashboardGapSize);
@@ -163,6 +163,12 @@
     font-weight: normal;
 }
 
-@media(max-width: 579px) {
-
+@media(max-width: 879px) {
+    .contentContainer.mainContentContainer > .sectionCardContainer {
+        grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    }
+    
+    .contentContainer.secondaryContentContainer > .sectionCardContainer {
+        grid-template-columns: minmax(250px, 1fr);
+    }
 }
