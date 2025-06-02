@@ -25,6 +25,12 @@
     }
 }
 
+@media(max-width: 639px) {
+    .dashboardContentContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media(max-width: 579px) {
     .dashboardBarContainer {
         padding: 0.5rem 1.5rem;

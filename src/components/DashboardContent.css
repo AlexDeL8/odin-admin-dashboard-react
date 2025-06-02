@@ -7,13 +7,15 @@
     row-gap: var(--dashboardGapSize);
 }
 
-.contentContainer.secondaryContentContainer > .sectionCardContainer {
+.contentContainer.secondaryContentContainer {
     display: grid;
     grid-template-columns: minmax(275px, 1fr);
     column-gap: var(--dashboardGapSize);
-    row-gap: var(--dashboardGapSize);
+    row-gap: calce(var(--dashboardGapSize) + 2rem);
+}
+
+.contentContainer.secondaryContentContainer > .sectionCardContainer {
     height: min-content;
-    margin-bottom: 2rem;
 }
 
 .contentContainer.secondaryContentContainer > .sectionCardContainer:last-child {
