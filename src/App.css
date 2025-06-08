@@ -36,3 +36,16 @@ main {
         grid-template-columns: 50px 1fr;
     }
 }
+
+@media(max-width: 499px) {
+    /* main {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        position: fixed;
+        bottom: 0;
+        overflow: hidden;
+        width: 100%;
+    } */
+}

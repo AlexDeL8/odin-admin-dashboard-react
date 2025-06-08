@@ -38,26 +38,46 @@ const ContentSection = (props: ContentSectionProps) => {
         break;
     case "array":
       sectionContent = 
-        <div className='contentCard trendingUsersContentCard'>
-          <ContentCard data={props.cardData.data} />
+        <div className='secondarySectionContainer'>
+          {title}
+          <div className='contentCard trendingUsersContentCard'>
+            <ContentCard data={props.cardData.data} />
+          </div>
         </div>
         break;
     case "arrayDiv":
       sectionContent =
-        <div className='contentCard annoucementContentCard'>
-          <ContentCard data={props.cardData.data} divider={true} />
+        <div className='secondarySectionContainer'>
+          {title}
+          <div className='contentCard annoucementContentCard'>
+            <ContentCard data={props.cardData.data} divider={true} />
+          </div>
         </div>
       break;
     default:
       console.error("Unknown ContentSection.tsx type")
       break;
   }
-  return (
+
+  let section = null
+  if(props.cardData?.type === "single") {
+    section = 
     <>
-      {title}
+    {title}
       <div className='sectionCardContainer'>
         {sectionContent}
       </div>
+    </>
+  } else {
+    section = 
+    <div className='sectionCardContainer'>
+      {sectionContent}
+    </div>
+  }
+
+  return (
+    <>
+      {section}
     </>
   )
 }
