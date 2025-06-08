@@ -179,13 +179,9 @@
     }
 }
 
-@media(max-width: 639px) {
+@media(max-width: 640px) {
     .contentContainer.secondaryContentContainer {
         margin-top: 1rem;
         row-gap: var(--dashboardGapSize);
     }
-}
-
-@media(max-width: 359px) {
-    
 }
