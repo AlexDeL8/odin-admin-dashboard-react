@@ -3,6 +3,7 @@ import SidebarList from './SidebarList'
 import './Sidebar.css'
 
 const Sidebar = () => {
+  const mobileSidebarItems = [...SidebarNavItems, ...SidebarSettingsItems].filter((icon) => !icon.desktopOnly)
   return (
     <>
       {LogoHeading.map((item, idx) => {
@@ -18,6 +19,9 @@ const Sidebar = () => {
         </div>
         <div className='sidebarGroup'>
           <SidebarList items={SidebarSettingsItems} />
+        </div>
+        <div className='mobileSidebarGroup'>
+          <SidebarList items={mobileSidebarItems} />
         </div>
     </>
   )

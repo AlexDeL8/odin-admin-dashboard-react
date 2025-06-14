@@ -15,54 +15,65 @@ import {
 export type ListItem = {
     icon: React.ReactNode;
     text: string;
+    desktopOnly: boolean;
 };
 
 const LogoHeading: ListItem[] = [
     {
         icon: <Icon path={mdiCodeBlockBrackets} size={2} />,
-        text: "Dashboard"
+        text: "Dashboard",
+        desktopOnly: true
     }
 ]
 
 const SidebarNavItems: ListItem[] = [
     {
         icon: <Icon path={mdiHome} size={1} />,
-        text: "Home"
+        text: "Home",
+        desktopOnly: false
     },
     {
         icon: <Icon path={mdiCardAccountDetailsOutline} size={1} />,
-        text: "Profile"
+        text: "Profile",
+        desktopOnly: false
     },
     {
         icon: <Icon path={mdiMessageReply} size={1} />,
-        text: "Messages"
+        text: "Messages",
+        desktopOnly: false
     },
     {
         icon: <Icon path={mdiClockTimeThree} size={1} />,
-        text: "History"
+        text: "History",
+        desktopOnly: true
     },
     {
         icon: <Icon path={mdiNoteMultiple} size={1} />,
-        text: "Tasks"
+        text: "Tasks",
+        desktopOnly: true
     },
     {
         icon: <Icon path={mdiAccountGroup} size={1} />,
-        text: "Communities"
+        text: "Communities",
+        desktopOnly: true
     }
 ]
 
 const SidebarSettingsItems: ListItem[] = [
     {
         icon: <Icon path={mdiCog} size={1} />,
-        text: "Settings"
+        text: "Settings",
+        desktopOnly: false
     },
     {
         icon: <Icon path={mdiHelpBox} size={1} />,
-        text: "Support"
+        text: "Support",
+        desktopOnly: true
     },
     {
         icon: <Icon path={mdiShieldCheck} size={1} />,
-        text: "Privacy"
+        text: "Privacy",
+        desktopOnly: true
     },
 ]
 

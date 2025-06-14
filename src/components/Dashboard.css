@@ -34,3 +34,9 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media(max-width: 499px) {
+    .dashboardContentContainer {
+        padding-bottom: 4.5rem;
+    }
+}
