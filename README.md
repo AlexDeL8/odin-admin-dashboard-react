@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+# Odin Admin Dashboard ⚛️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Noteable Technology/Practices:** React, TypeScript, Grid, Flexbox, HTML5, CSS3
 
-Currently, two official plugins are available:
+A fully responsive dashboard, from desktops 🖥️ to mobile 📱 & Utilizes TypeScript to import data to decipher how dashboard cards/content is rendered.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshots
 
-## Expanding the ESLint configuration
+XSmall (iPhone 4)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![iPhone 4 View](/public/iPhone%204-1750004990125.jpeg "XSmall (iPhone 4)")
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Small (Nexus 5X)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+![Nexus 5X View](/public/Nexus%205X-1750004990035.jpeg "Small (Nexus 5X)")
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Medium (Pixel 2 - Landscape)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+![Pixel 2 - Landscape](/public/Pixel%202-1750004990102.jpeg "Medium (Pixel 2 - Landscape)")
+
+Medium (iPhone 12 Pro - Landscape)
+
+![iPhone 12 Pro - Landscape](/public/iPhone%2012%20Pro-1750004989985.jpeg "Medium (iPhone 12 Pro - Landscape)")
+
+Large (MacBook Pro)
+
+![MacBook Pro](/public/MacBook%20Pro-1750004990307.jpeg "Large (MacBook Pro)")
