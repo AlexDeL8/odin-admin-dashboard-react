@@ -11,34 +11,34 @@ View the dashboard screenshots on different devices
 <details>
   <summary>XSmall (iPhone 4)</summary>
 
-![iPhone 4 View](/public/iPhone%204-1750004990125.jpeg "XSmall (iPhone 4)")
+![iPhone 4 View](/public/iPhone%204-1750018557153.jpeg "XSmall (iPhone 4)")
 
 </details>
 
 <details>
   <summary>Small (Nexus 5X)</summary>
 
-![Nexus 5X View](/public/Nexus%205X-1750004990035.jpeg "Small (Nexus 5X)")
+![Nexus 5X View](/public/Nexus%205X-1750018557060.jpeg "Small (Nexus 5X)")
 
 </details>
 
 <details>
   <summary>Medium (Pixel 2 - Landscape)</summary>
 
-![Pixel 2 - Landscape](/public/Pixel%202-1750004990102.jpeg "Medium (Pixel 2 - Landscape)")
+![Pixel 2 - Landscape](/public/Pixel%202-1750018557060.jpeg "Medium (Pixel 2 - Landscape)")
 
 </details>
 
 <details>
   <summary>Medium (iPhone 12 Pro - Landscape)</summary>
 
-![iPhone 12 Pro - Landscape](/public/iPhone%2012%20Pro-1750004989985.jpeg "Medium (iPhone 12 Pro - Landscape)")
+![iPhone 12 Pro - Landscape](/public/iPhone%2012%20Pro-1750018556942.jpeg "Medium (iPhone 12 Pro - Landscape)")
 
 </details>
 
 <details>
   <summary>Large (MacBook Pro)</summary>
 
-![MacBook Pro](/public/MacBook%20Pro-1750004990307.jpeg "Large (MacBook Pro)")
+![MacBook Pro](/public/MacBook%20Pro-1750018557572.jpeg "Large (MacBook Pro)")
 
 </details>
