@@ -31,6 +31,7 @@
 /* Content Card */
 .contentCard {
     box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.11) 1.4px 3.5px 3.2px;
     background-color: var(--cardColor);
     border-radius: 6px;
     --_priority: var(--priority, gray);
