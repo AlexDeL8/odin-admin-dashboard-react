@@ -2,7 +2,7 @@
 
 **Noteable Technology/Practices:** React, TypeScript, Grid, Flexbox, HTML5, CSS3
 
-[Visit Dashboard↗](https://alexdel8.github.io/odin-admin-dashboard-react/)
+<a href="https://alexdel8.github.io/odin-admin-dashboard-react/" target="_blank">Visit Dashboard↗</a>
 
 A fully responsive dashboard, from desktops 🖥️ to mobile 📱 & Utilizes TypeScript to import data to decipher how dashboard cards/content is rendered.
 
