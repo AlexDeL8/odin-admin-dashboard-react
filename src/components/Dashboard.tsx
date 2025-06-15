@@ -6,10 +6,10 @@ import Navbar from './Navbar'
 import Taskbar from './Taskbar'
 import DashboardContent from './DashboardContent'
 
-export enum DashboardType {
-    Admin = "Admin",
-    User = "User"
-}
+// export enum DashboardType {
+//     Admin = "Admin",
+//     User = "User"
+// }
 
 const Dashboard = () => {
     // const [dashboardType, setDashboardType] = useState(DashboardType.Admin)
