@@ -19,6 +19,8 @@ main {
     background-color: var(--primaryColor);
     color: var(--primaryTextColor);
     padding: 0.65rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .dashboard {
@@ -31,6 +33,10 @@ main {
     align-items: center;
 }
 
+.mobileSidebarGroup {
+    display: none;
+}
+
 @media(max-width: 799px) {
     main {
         grid-template-columns: 50px 1fr;
@@ -38,14 +44,18 @@ main {
 }
 
 @media(max-width: 499px) {
-    /* main {
+    main {
         grid-template-columns: 1fr;
     }
     
     .sidebar {
+        box-sizing: border-box;
         position: fixed;
         bottom: 0;
         overflow: hidden;
         width: 100%;
-    } */
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 }

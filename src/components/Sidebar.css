@@ -24,6 +24,11 @@
     margin-bottom: 4em;
 }
 
+.sidebarList { 
+    display: flex;
+    flex-direction: column;
+}
+
 .sidebarList:last-child {
     margin-bottom: 0;
 }
@@ -68,5 +73,26 @@
 }
 
 @media(max-width: 499px) {
-    /* TODO: xSmall */
+    .mobileSidebarGroup {
+        display: block;
+        width: 100%;
+    }
+
+    .logoHeading {
+        display: none;
+    }
+
+    .sidebarGroup {
+        display: none;
+    }
+
+    .mobileSidebarGroup > .sidebarList {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .mobileSidebarGroup > .sidebarList > .sidebarItem {
+        margin-bottom: 0;
+        width: 100%;
+    }
 }
